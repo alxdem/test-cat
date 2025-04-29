@@ -1,0 +1,29 @@
+.spinner {
+    width: 100px;
+    display: block;
+    margin-top: 100px;
+}
+
+.error {
+    font-size: 18px;
+}
+
+.image {
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+    .spinner {
+        width: 32vw;
+        margin-top: 12vw;
+    }
+
+    .image {
+        border-radius: 2.5vw;
+    }
+
+    .error {
+        font-size: 5.6vw;
+    }
+}
