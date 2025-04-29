@@ -5,3 +5,5 @@
 - Использовать внешний api: https://thecatapi.com/
 
 Node 20.10
+
+Результат: https://test-cat-rho.vercel.app/
