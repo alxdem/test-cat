@@ -40,6 +40,7 @@ function App() {
                 btnText='Get cat'
                 getPhoto={onGetPhoto}
                 setAuto={setIsAuto}
+                isLoading={isLoading}
             />
             <Media
                 url={imageUrl}

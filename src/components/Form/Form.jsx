@@ -3,7 +3,7 @@ import Button from '../Button/Button.jsx';
 import { useState } from 'react';
 import styles from './Form.module.css';
 
-function Form({checkboxes, btnText, getPhoto, setAuto}) {
+function Form({checkboxes, btnText, isLoading, getPhoto, setAuto}) {
     const [isBtnEnabled, setIsBtnEnabled] = useState(false);
 
     const changePhoto = (e) => {
@@ -42,7 +42,7 @@ function Form({checkboxes, btnText, getPhoto, setAuto}) {
             <Button
                 text={btnText}
                 onClick={changePhoto}
-                disabled={!isBtnEnabled}
+                disabled={!isBtnEnabled || isLoading}
             />
         </form>
     );
